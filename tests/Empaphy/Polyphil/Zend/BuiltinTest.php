@@ -1,9 +1,9 @@
 <?php
 
-namespace Zend;
+namespace Tests\Empaphy\Polyphil\Zend;
 
-use PHPUnit\Framework\TestCase;
 use Empaphy\Polyphill\Zend\Builtin;
+use PHPUnit\Framework\TestCase;
 
 class BuiltinTest extends TestCase
 {
