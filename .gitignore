@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+.git
+Thumbs.db
+
+!/.idea
+/.idea/*
+!/.idea/inspectionProfiles/Project_Default.xml
+!/.idea/modules.xml
+!/.idea/polyphill.iml
+!/.idea/vcs.xml
+
+/vendor
+
+/.phpunit.result.cache
+/composer.lock
+/phpunit.xml.dist.bak
