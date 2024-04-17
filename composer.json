@@ -1,0 +1,41 @@
+{
+    "name":        "empaphy/polyphill",
+    "description": "A one-size-fits-all polyfill for PHP",
+    "keywords":    ["polyfill", "compatibility"],
+    "homepage":    "https://polyphill.empaphy.org",
+    "license":     "MIT",
+
+    "authors":     [
+        {
+            "name":  "Alwin Garside",
+            "email": "alwin@garsi.de",
+            "homepage": "https://yogarine.net",
+            "role":  "Developer"
+        }
+    ],
+
+    "support": {
+        "issues": "https://github.com/empaphy/polyphill/issues",
+        "source": "https://github.com/empaphy/polyphill/tree"
+    },
+
+    "require":     {
+        "php": ">=5.3"
+    },
+
+    "require-dev": {
+        "phpstan/phpstan": "^1",
+        "phpunit/phpunit": ">=5.7 <9"
+    },
+
+    "autoload":    {
+        "files": [
+            "bootstrap.php"
+        ],
+        "psr-4": {
+            "": "src"
+        }
+    },
+
+    "prefer-stable": true
+}
