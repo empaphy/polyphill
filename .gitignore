@@ -10,6 +10,7 @@ Thumbs.db
 !/.idea/polyphill.iml
 !/.idea/vcs.xml
 
+/var
 /vendor
 
 /.phpunit.result.cache

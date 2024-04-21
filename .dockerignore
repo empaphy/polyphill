@@ -1,0 +1,9 @@
+*
+
+!src
+!tests
+!Zend
+!bootstrap.php
+!composer.json
+!LICENSE
+!phpunit.xml.dist

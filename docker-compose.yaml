@@ -1,0 +1,20 @@
+services:
+  php:
+    image: "empaphy/php:${PHP_VERSION}"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PHP_VERSION: "${PHP_VERSION}"
+    environment:
+        COMPOSER_HOME: &composer-home "/var/www/.composer"
+    working_dir: /var/www/html
+    volumes:
+      - { type: bind, source: "./.composer",                   target: *composer-home, bind: { create_host_path: true } }
+      - { type: bind, source: "./var/www/${PHP_VERSION}/html", target: /var/www/html,      bind: { create_host_path: true } }
+      - { type: bind, source: "./src",                         target: /var/www/html/src }
+      - { type: bind, source: "./tests",                       target: /var/www/html/tests }
+      - { type: bind, source: "./Zend",                        target: /var/www/html/Zend }
+      - { type: bind, source: "./bootstrap.php",               target: /var/www/html/bootstrap.php }
+      - { type: bind, source: "./composer.json",               target: /var/www/html/composer.json }
+      - { type: bind, source: "./phpunit.xml.dist",            target: /var/www/html/phpunit.xml.dist }
