@@ -12,6 +12,7 @@ services:
     volumes:
       - { type: bind, source: "./.composer",                   target: *composer-home, bind: { create_host_path: true } }
       - { type: bind, source: "./var/www/${PHP_VERSION}/html", target: /var/www/html,      bind: { create_host_path: true } }
+      - { type: bind, source: "./ext",                         target: /var/www/html/ext }
       - { type: bind, source: "./src",                         target: /var/www/html/src }
       - { type: bind, source: "./tests",                       target: /var/www/html/tests }
       - { type: bind, source: "./Zend",                        target: /var/www/html/Zend }

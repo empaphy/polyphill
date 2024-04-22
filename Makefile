@@ -31,6 +31,8 @@ down:
 .PHONY: test
 test: $(VENDOR_DIR)
 	$(phil_target_info)
+	$(info Testing on PHP $(PHP_VERSION))
+
 	@docker compose run --rm php vendor/bin/phpunit
 
 .PHONY: tests
