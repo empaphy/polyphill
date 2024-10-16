@@ -1,0 +1,12 @@
+/.idea/*
+!/.idea/modules.xml
+!/.idea/php.xml
+!/.idea/polyphill.iml
+!/.idea/vcs.xml
+
+/vendor
+
+.git
+.DS_Store
+Thumbs.db
+composer.lock

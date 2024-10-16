@@ -1,0 +1,24 @@
+{
+    "name": "empaphy/polyphill",
+    "description": "A metapackage for PHP that installs the polyfills you need, and removes those that are redundant.",
+    "version": "1.0.0",
+    "type": "metapackage",
+    "keywords": ["compatibility", "polyfill", "portable", "shim"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/empaphy/polyphill/issues",
+        "wiki": "https://github.com/empaphy/polyphill/wiki"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "empaphy/polyphill-php": "^1",
+        "empaphy/polyphill-apcu": "^1",
+        "empaphy/polyphill-bcmath": "^1",
+        "empaphy/polyphill-intl": "^1",
+        "empaphy/polyphill-mbstring": "^1",
+        "empaphy/polyphill-uuid": "^1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
+}
